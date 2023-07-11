@@ -33,7 +33,7 @@ _____
 ## Part-2
 
 ### Description 
-Congrats Investigator for finding the first part can you use it to get the secret message?
+Congrats Investigator for finding the first part can you use it to get the secret message? [file](https://github.com/Ayush-Sl4y3r/CTFs/blob/main/CrewCTF/Encrypt10n/flag)
 
 ### Write-Up
 Now we have to use the password which we found in part-1 to clear our part-2. But How ??
@@ -46,7 +46,7 @@ I open the **flag** file provided in the challenge itself and opened with the __
 ![Screenshot from 2023-07-11 13-42-19](https://github.com/Ayush-Sl4y3r/CTFs/assets/128846862/ce1a42e5-0ff6-47cf-8a82-3ca6fc38ea4b)
 
 
-And we got another file encoded multiple times in `base64`. 
+And we got another [file](https://github.com/Ayush-Sl4y3r/CTFs/blob/main/CrewCTF/Encrypt10n/flaaaaaaaaaaaaaaaaaaaaaaaag.txt) encoded multiple times in `base64`. 
 
 After decoding it, we get the flag.
 
