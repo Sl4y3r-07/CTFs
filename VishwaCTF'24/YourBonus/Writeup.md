@@ -6,8 +6,8 @@ Note : Ransomware are not meant to be executed as it can harm your systems (alth
 
 ### Files
 [ransomeware.exe](ransomeware.exe)
-[READMe.txt](READMe.txt)
-[your_hackday_data0.txt](your_hackday_data0.txt)
+[READMe.txt](README.txt)
+[your_hackday_data0.txt](Your_hackday_data0.txt)
 
 ### Writeup
 - Analysed the `ransomeware.exe` in IDA (a powerful debugging tool). It has functions like `zarathos`, `lucifer`, `ghost_ridders`, `matter_manipulation`, `trigon` and few more.
