@@ -7,11 +7,11 @@ Note : Ransomware are not meant to be executed as it can harm your systems (alth
 ### Files
 [ransomeware.exe](ransomeware.exe)
 [READMe.txt](README.txt)
-[your_hackday_data0.txt](Your_hackday_data0.txt)
+[your_hackday_data0.txt](Your_hacked_data0.txt)
 
 ### Writeup
 - Analysed the `ransomeware.exe` in IDA (a powerful debugging tool). It has functions like `zarathos`, `lucifer`, `ghost_ridders`, `matter_manipulation`, `trigon` and few more.
-- Functioning of binary: It takes a file as Input, i.e., `Flags.txt`, reads its content, perform some operations and stores the result in `your_hackday_data0.txt`
+- Functioning of binary: It takes a file as Input, i.e., `Flags.txt`, reads its content, perform some operations and stores the result in `your_hacked_data0.txt`
 - `zarathos` : This function takes the string and gets the substring (random number of characters from the beginning) from the string, reverses it and then reverses the last remaining part and after it, reverses the whole string. For example: String : `VishwaCTF{Sl4y3r}`  1. `4lS}FTCawhsiVy3r}` 2. `4lS}FTCawhsiV}r3y` 3. `y3r}VishwaCTF{Sl4`
 - `lucifer` : string[i] = chr(ord(string[i])-2)) (here 2 can be other number also, like 1)
 - In this binary, characters from `0 to 9` are mapped with special symbols like `@#$!`
@@ -26,7 +26,7 @@ Note : Ransomware are not meant to be executed as it can harm your systems (alth
   ```
 - Characters of the resultant string after `zarathos` & `lucifer` are converted into ascii codes and then mapped accordingly.
 - Thus, the logic behind the encoding is decoded.
-- To get the flag, reverse the operations on the data given in `your_hackday_data0.txt`
+- To get the flag, reverse the operations on the data given in `your_hackded_data0.txt`
 ``` python
 str='''%##^!)@#(!!(!$%)%&%#(!^&%#^(#*##^&^%&)&)%^!)%)!*($($%$(#(%%&%#@^@)^%!)!)((&@##&$###^^*&@##@@^&#^&@@%####!$!@!@(#!)&)%#%&!$#^@^^%!*%)&)&@@((@!@@@(%!@(@(@!^%)%&!!%#!!%###($@^
 ((!^#!%#()^&#)&@#*%*^&&@(^^&(@(%%@!^%&#(@&&)&)(%^(!&%^!)%)!*%#(@(#%$(%%&%*#*!(#)&$@^(%!^(!#%^&&@%#@(#)#*%@%$^(^(%###(%%@!^%&#(@&&)&)!(%$((#*%^!)%)!*(%%&(((%%#!(#)^(()^&##^%%##*%*#*#*%!#)&@#*%*
